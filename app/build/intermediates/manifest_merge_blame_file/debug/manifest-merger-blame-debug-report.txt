@@ -1,0 +1,530 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ygaps.jazz"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:6:5-81
+12-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:7:5-80
+13-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:7:22-77
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:8:5-79
+14-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:8:22-76
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:9:5-81
+15-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+16-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:10:5-71
+16-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:10:22-68
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->[com.google.android.libraries.places:places:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\6986adef19a0e909ecbc0f71dc98409b\places-2.1.0\AndroidManifest.xml:10:5-76
+17-->[com.google.android.libraries.places:places:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\6986adef19a0e909ecbc0f71dc98409b\places-2.1.0\AndroidManifest.xml:10:22-73
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:24:5-79
+18-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:24:22-76
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:25:5-68
+19-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:25:22-65
+20    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+20-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+20-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+21    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+21-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+21-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+22
+23    <uses-feature
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\1a2a8515e20502e3c125811cc3c42556\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+24        android:glEsVersion="0x00020000"
+24-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\1a2a8515e20502e3c125811cc3c42556\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+25        android:required="true" />
+25-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\1a2a8515e20502e3c125811cc3c42556\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+26
+27    <application
+27-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:12:5-87:19
+28        android:allowBackup="true"
+28-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:13:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b45528a27205a01405ad6f4395a0759b\core-1.1.0\AndroidManifest.xml:24:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/ic_launcher_foreground"
+31-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:14:9-54
+32        android:label="@string/app_name"
+32-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:15:9-41
+33        android:requestLegacyExternalStorage="true"
+33-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:16:9-52
+34        android:roundIcon="@mipmap/ic_launcher_foreground"
+34-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:17:9-59
+35        android:supportsRtl="true"
+35-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:18:9-35
+36        android:testOnly="true"
+37        android:theme="@style/AppTheme"
+37-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:19:9-40
+38        android:usesCleartextTraffic="true" >
+38-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:20:9-44
+39        <activity android:name="com.ygaps.jazz.view.stoppoint.StopPointFeedbackActivity" />
+39-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:21:9-87
+39-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:21:19-75
+40        <activity android:name="com.ygaps.jazz.view.journey.JourneyReviewActivity" />
+40-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:22:9-72
+40-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:22:19-69
+41        <activity android:name="com.ygaps.jazz.view.stoppoint.StopPointEditActivity" />
+41-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:23:9-74
+41-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:23:19-71
+42        <activity android:name="com.ygaps.jazz.view.journey.JourneyFollowActivity" />
+42-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:24:9-72
+42-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:24:19-69
+43        <activity android:name="com.ygaps.jazz.view.createjourney.ChangeJourneyInfo" />
+43-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:25:9-74
+43-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:25:19-71
+44        <activity android:name="com.ygaps.jazz.view.user.UpdatePassword" />
+44-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:26:9-62
+44-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:26:19-59
+45        <activity android:name="com.ygaps.jazz.view.user.forgetpassword.CheckOTPActivity" />
+45-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:27:9-79
+45-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:27:19-76
+46        <activity android:name="com.ygaps.jazz.view.user.EditInfomation" />
+46-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:28:9-62
+46-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:28:19-59
+47        <activity android:name="com.ygaps.jazz.view.user.forgetpassword.getOTPActivity" />
+47-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:29:9-77
+47-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:29:19-74
+48        <activity android:name="com.ygaps.jazz.view.stoppoint.StopPointInfo" />
+48-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:30:9-66
+48-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:30:19-63
+49        <activity
+49-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:31:9-33:39
+50            android:name="com.ygaps.jazz.view.member.MemberListOfJourney"
+50-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:32:13-60
+51            android:label="Members" />
+51-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:33:13-36
+52        <activity
+52-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:34:9-36:70
+53            android:name="com.ygaps.jazz.JourneyInfoActivity"
+53-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:35:13-48
+54            android:windowSoftInputMode="stateHidden|adjustResize" />
+54-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:36:13-67
+55        <activity android:name="com.ygaps.jazz.GetCoordinateActivity" />
+55-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:37:9-59
+55-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:37:19-56
+56        <activity
+56-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:38:9-46:20
+57            android:name="com.ygaps.jazz.MainActivity"
+57-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:39:13-41
+58            android:theme="@style/SplashTheme" >
+58-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:40:13-47
+59            <intent-filter>
+59-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:41:13-45:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:42:17-69
+60-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:42:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:44:17-77
+62-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:44:27-74
+63            </intent-filter>
+64        </activity>
+65        <activity
+65-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:47:9-49:46
+66            android:name="com.ygaps.jazz.CreateJourneyActivity"
+66-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:48:13-50
+67            android:label="Create Journey" />
+67-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:49:13-43
+68        <activity android:name="com.ygaps.jazz.RegisterActivity" />
+68-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:50:9-54
+68-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:50:19-51
+69        <activity android:name="com.ygaps.jazz.LoginActivity" />
+69-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:51:9-51
+69-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:51:19-48
+70        <activity
+70-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:52:9-54:40
+71            android:name="com.ygaps.jazz.NavigationBottomActivity"
+71-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:53:13-53
+72            android:label="MainPage" />
+72-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:54:13-37
+73
+74        <meta-data
+74-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:56:9-57:50
+75            android:name="com.facebook.sdk.ApplicationId"
+75-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:56:20-65
+76            android:value="@string/facebook_app_id" />
+76-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:57:9-48
+77
+78        <activity
+78-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:59:9-62:48
+79            android:name="com.facebook.FacebookActivity"
+79-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:59:19-63
+80            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+80-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:60:13-113
+81            android:label="@string/app_name"
+81-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:62:13-45
+82            android:theme="@style/com_facebook_activity_theme" />
+82-->[com.facebook.android:facebook-common:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\bb0aaa10f1eeec50de612deb815b04f7\jetified-facebook-common-5.15.3\AndroidManifest.xml:33:13-63
+83        <activity
+83-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:63:9-72:20
+84            android:name="com.facebook.CustomTabActivity"
+84-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:64:13-58
+85            android:exported="true" >
+85-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:65:13-36
+86            <intent-filter>
+86-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:66:13-71:29
+87                <action android:name="android.intent.action.VIEW" />
+87-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:67:17-69
+87-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:67:25-66
+88
+89                <category android:name="android.intent.category.DEFAULT" />
+89-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:68:17-76
+89-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:68:27-73
+90                <category android:name="android.intent.category.BROWSABLE" />
+90-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:69:17-78
+90-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:69:27-75
+91
+92                <data android:scheme="@string/fb_login_protocol_scheme" />
+92-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:70:17-75
+92-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:70:23-72
+93            </intent-filter>
+94            <intent-filter>
+94-->[com.facebook.android:facebook-common:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\bb0aaa10f1eeec50de612deb815b04f7\jetified-facebook-common-5.15.3\AndroidManifest.xml:39:13-48:29
+95                <action android:name="android.intent.action.VIEW" />
+95-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:67:17-69
+95-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:67:25-66
+96
+97                <category android:name="android.intent.category.DEFAULT" />
+97-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:68:17-76
+97-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:68:27-73
+98                <category android:name="android.intent.category.BROWSABLE" />
+98-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:69:17-78
+98-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:69:27-75
+99
+100                <data
+100-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:70:17-75
+101                    android:host="cct.com.ygaps.jazz"
+102                    android:scheme="fbconnect" />
+102-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:70:23-72
+103            </intent-filter>
+104        </activity>
+105
+106        <service
+106-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:75:9-81:19
+107            android:name="com.ygaps.jazz.service.FirebaseMessagingService"
+107-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:76:13-61
+108            android:exported="false" >
+108-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:77:13-37
+109            <intent-filter>
+109-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:78:13-80:29
+110                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+110-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:79:17-78
+110-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:79:25-75
+111            </intent-filter>
+112        </service>
+113        <service android:name="com.ygaps.jazz.service.NotificationActionService" />
+113-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:82:9-70
+113-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:82:18-67
+114
+115        <meta-data
+115-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:84:9-86:44
+116            android:name="com.google.firebase.messaging.default_notification_channel_id"
+116-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:85:13-89
+117            android:value="dulich-47e62" />
+117-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:86:13-41
+118
+119        <activity
+119-->[com.google.android.libraries.places:places:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\6986adef19a0e909ecbc0f71dc98409b\places-2.1.0\AndroidManifest.xml:14:9-20:20
+120            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+120-->[com.google.android.libraries.places:places:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\6986adef19a0e909ecbc0f71dc98409b\places-2.1.0\AndroidManifest.xml:15:13-91
+121            android:exported="false"
+121-->[com.google.android.libraries.places:places:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\6986adef19a0e909ecbc0f71dc98409b\places-2.1.0\AndroidManifest.xml:16:13-37
+122            android:label="@string/places_autocomplete_label"
+122-->[com.google.android.libraries.places:places:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\6986adef19a0e909ecbc0f71dc98409b\places-2.1.0\AndroidManifest.xml:17:13-62
+123            android:theme="@style/PlacesAutocompleteOverlay"
+123-->[com.google.android.libraries.places:places:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\6986adef19a0e909ecbc0f71dc98409b\places-2.1.0\AndroidManifest.xml:18:13-61
+124            android:windowSoftInputMode="adjustResize" >
+124-->[com.google.android.libraries.places:places:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\6986adef19a0e909ecbc0f71dc98409b\places-2.1.0\AndroidManifest.xml:19:13-55
+125        </activity>
+126        <activity android:name="com.facebook.CustomTabMainActivity" />
+126-->[com.facebook.android:facebook-common:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\bb0aaa10f1eeec50de612deb815b04f7\jetified-facebook-common-5.15.3\AndroidManifest.xml:34:9-71
+126-->[com.facebook.android:facebook-common:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\bb0aaa10f1eeec50de612deb815b04f7\jetified-facebook-common-5.15.3\AndroidManifest.xml:34:19-68
+127
+128        <provider
+128-->[com.squareup.picasso:picasso:2.71828] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\424f6487adbf9a978e4a62af6d22b103\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+129            android:name="com.squareup.picasso.PicassoProvider"
+129-->[com.squareup.picasso:picasso:2.71828] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\424f6487adbf9a978e4a62af6d22b103\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+130            android:authorities="com.ygaps.jazz.com.squareup.picasso"
+130-->[com.squareup.picasso:picasso:2.71828] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\424f6487adbf9a978e4a62af6d22b103\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+131            android:exported="false" />
+131-->[com.squareup.picasso:picasso:2.71828] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\424f6487adbf9a978e4a62af6d22b103\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+132
+133        <receiver
+133-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+134            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+134-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+135            android:enabled="true"
+135-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+136            android:exported="false" >
+136-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+137        </receiver>
+138        <receiver
+138-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+139            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+139-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+140            android:enabled="true"
+140-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+141            android:exported="true"
+141-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+142            android:permission="android.permission.INSTALL_PACKAGES" >
+142-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+143            <intent-filter>
+143-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+144                <action android:name="com.android.vending.INSTALL_REFERRER" />
+144-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+144-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+145            </intent-filter>
+146        </receiver>
+147
+148        <service
+148-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+149            android:name="com.google.android.gms.measurement.AppMeasurementService"
+149-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+150            android:enabled="true"
+150-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+151            android:exported="false" />
+151-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+152        <service
+152-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+153            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+153-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+154            android:enabled="true"
+154-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+155            android:exported="false"
+155-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+156            android:permission="android.permission.BIND_JOB_SERVICE" />
+156-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\d09b29bc7460f29d8382f7473d08e71d\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+157        <!--
+158         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+159         with the application context. This config is merged in with the host app's manifest,
+160         but there can only be one provider with the same authority activated at any given
+161         point; so if the end user has two or more different apps that use Facebook SDK, only the
+162         first one will be able to use the provider. To work around this problem, we use the
+163         following placeholder in the authority to identify each host application as if it was
+164         a completely different provider.
+165        -->
+166        <provider
+166-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:39:9-42:40
+167            android:name="com.facebook.internal.FacebookInitProvider"
+167-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:40:13-70
+168            android:authorities="com.ygaps.jazz.FacebookInitProvider"
+168-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:41:13-72
+169            android:exported="false" />
+169-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:42:13-37
+170
+171        <receiver
+171-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:44:9-50:20
+172            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+172-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:45:13-86
+173            android:exported="false" >
+173-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:46:13-37
+174            <intent-filter>
+174-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:47:13-49:29
+175                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+175-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:48:17-95
+175-->[com.facebook.android:facebook-core:5.15.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\e01e43b03b936f73d57f09fe8c7aa246\jetified-facebook-core-5.15.3\AndroidManifest.xml:48:25-92
+176            </intent-filter>
+177        </receiver>
+178        <!--
+179             FirebaseMessagingService performs security checks at runtime,
+180             but set to not exported to explicitly avoid allowing another app to call it.
+181        -->
+182        <service
+182-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\09a546854845de4c467a1ad79ad79a4b\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
+183            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+183-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\09a546854845de4c467a1ad79ad79a4b\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
+184            android:exported="false" >
+184-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\09a546854845de4c467a1ad79ad79a4b\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
+185            <intent-filter android:priority="-500" >
+185-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:78:13-80:29
+186                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+186-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:79:17-78
+186-->C:\Users\FiercePC\Desktop\Journey Assist - JAzz\app\src\main\AndroidManifest.xml:79:25-75
+187            </intent-filter>
+188        </service>
+189        <service
+189-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\09a546854845de4c467a1ad79ad79a4b\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:35:9-41:19
+190            android:name="com.google.firebase.components.ComponentDiscoveryService"
+190-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\09a546854845de4c467a1ad79ad79a4b\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:36:13-84
+191            android:directBootAware="true"
+191-->[com.google.firebase:firebase-common:19.3.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\fe63571a6baf4b2b4e6e0709853a5f96\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+192            android:exported="false" >
+192-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\09a546854845de4c467a1ad79ad79a4b\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:37:13-37
+193            <meta-data
+193-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\09a546854845de4c467a1ad79ad79a4b\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
+194                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+194-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\09a546854845de4c467a1ad79ad79a4b\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
+195                android:value="com.google.firebase.components.ComponentRegistrar" />
+195-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\09a546854845de4c467a1ad79ad79a4b\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
+196            <meta-data
+196-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\3c7d93fd699874d2f230d9f5e08ede8f\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+197                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+197-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\3c7d93fd699874d2f230d9f5e08ede8f\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+198                android:value="com.google.firebase.components.ComponentRegistrar" />
+198-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\3c7d93fd699874d2f230d9f5e08ede8f\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+199            <meta-data
+199-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+200                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+200-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+201                android:value="com.google.firebase.components.ComponentRegistrar" />
+201-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+202            <meta-data
+202-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:36:13-38:85
+203                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+203-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:37:17-109
+204                android:value="com.google.firebase.components.ComponentRegistrar" />
+204-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:38:17-82
+205            <meta-data
+205-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\4d8b62ebf7cb3c4c5086dbecbefb96b1\firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+206                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+206-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\4d8b62ebf7cb3c4c5086dbecbefb96b1\firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+207                android:value="com.google.firebase.components.ComponentRegistrar" />
+207-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\4d8b62ebf7cb3c4c5086dbecbefb96b1\firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+208        </service>
+209
+210        <receiver
+210-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+211            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+211-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+212            android:exported="true"
+212-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+213            android:permission="com.google.android.c2dm.permission.SEND" >
+213-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+214            <intent-filter>
+214-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+215                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+215-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+215-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\cf7841bee5014afa18e9d9b865277043\firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+216            </intent-filter>
+217        </receiver>
+218
+219        <activity
+219-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\c7f0a3967ba0c93df82fba4e7a094c81\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+220            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+220-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\c7f0a3967ba0c93df82fba4e7a094c81\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+221            android:excludeFromRecents="true"
+221-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\c7f0a3967ba0c93df82fba4e7a094c81\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+222            android:exported="false"
+222-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\c7f0a3967ba0c93df82fba4e7a094c81\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+223            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+223-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\c7f0a3967ba0c93df82fba4e7a094c81\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+224        <!--
+225            Service handling Google Sign-In user revocation. For apps that do not integrate with
+226            Google Sign-In, this service will never be started.
+227        -->
+228        <service
+228-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\c7f0a3967ba0c93df82fba4e7a094c81\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+229            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+229-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\c7f0a3967ba0c93df82fba4e7a094c81\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+230            android:exported="true"
+230-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\c7f0a3967ba0c93df82fba4e7a094c81\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+231            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+231-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\c7f0a3967ba0c93df82fba4e7a094c81\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+232
+233        <activity
+233-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:24:9-31:50
+234            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+234-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:25:13-85
+235            android:excludeFromRecents="true"
+235-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:26:13-46
+236            android:exported="true"
+236-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:27:13-36
+237            android:launchMode="singleTask"
+237-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:28:13-44
+238            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+238-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:29:13-102
+239            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Needs to be explicitly declared on P+ -->
+239-->[com.google.firebase:firebase-auth:19.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\2fd8eb4caa4ac7b47dd613d5fda8bf91\firebase-auth-19.1.0\AndroidManifest.xml:30:13-72
+240        <uses-library
+240-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\1a2a8515e20502e3c125811cc3c42556\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+241            android:name="org.apache.http.legacy"
+241-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\1a2a8515e20502e3c125811cc3c42556\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+242            android:required="false" />
+242-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\1a2a8515e20502e3c125811cc3c42556\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+243
+244        <activity
+244-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\41da659ee12775d807984748ff1c2b25\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+245            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+245-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\41da659ee12775d807984748ff1c2b25\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+246            android:exported="false"
+246-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\41da659ee12775d807984748ff1c2b25\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+247            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+247-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\41da659ee12775d807984748ff1c2b25\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+248
+249        <provider
+249-->[com.google.firebase:firebase-common:19.3.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\fe63571a6baf4b2b4e6e0709853a5f96\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+250            android:name="com.google.firebase.provider.FirebaseInitProvider"
+250-->[com.google.firebase:firebase-common:19.3.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\fe63571a6baf4b2b4e6e0709853a5f96\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+251            android:authorities="com.ygaps.jazz.firebaseinitprovider"
+251-->[com.google.firebase:firebase-common:19.3.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\fe63571a6baf4b2b4e6e0709853a5f96\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+252            android:exported="false"
+252-->[com.google.firebase:firebase-common:19.3.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\fe63571a6baf4b2b4e6e0709853a5f96\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+253            android:initOrder="100" />
+253-->[com.google.firebase:firebase-common:19.3.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\fe63571a6baf4b2b4e6e0709853a5f96\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+254
+255        <meta-data
+255-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\5e3514fb3084571c73cb9cbf65403089\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+256            android:name="com.google.android.gms.version"
+256-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\5e3514fb3084571c73cb9cbf65403089\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+257            android:value="@integer/google_play_services_version" />
+257-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\5e3514fb3084571c73cb9cbf65403089\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+258
+259        <service
+259-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b89c6441aa946e5248f581fc5bbebbc7\transport-backend-cct-2.2.0\AndroidManifest.xml:29:9-35:19
+260            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+260-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b89c6441aa946e5248f581fc5bbebbc7\transport-backend-cct-2.2.0\AndroidManifest.xml:30:13-103
+261            android:exported="false" >
+261-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b89c6441aa946e5248f581fc5bbebbc7\transport-backend-cct-2.2.0\AndroidManifest.xml:31:13-37
+262            <meta-data
+262-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b89c6441aa946e5248f581fc5bbebbc7\transport-backend-cct-2.2.0\AndroidManifest.xml:32:13-34:39
+263                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+263-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b89c6441aa946e5248f581fc5bbebbc7\transport-backend-cct-2.2.0\AndroidManifest.xml:33:17-94
+264                android:value="cct" />
+264-->[com.google.android.datatransport:transport-backend-cct:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b89c6441aa946e5248f581fc5bbebbc7\transport-backend-cct-2.2.0\AndroidManifest.xml:34:17-36
+265        </service>
+266        <service
+266-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b3023b5ae61397f3e295d9132dda2b3b\transport-runtime-2.2.0\AndroidManifest.xml:26:9-30:19
+267            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+267-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b3023b5ae61397f3e295d9132dda2b3b\transport-runtime-2.2.0\AndroidManifest.xml:27:13-117
+268            android:exported="false"
+268-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b3023b5ae61397f3e295d9132dda2b3b\transport-runtime-2.2.0\AndroidManifest.xml:28:13-37
+269            android:permission="android.permission.BIND_JOB_SERVICE" >
+269-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b3023b5ae61397f3e295d9132dda2b3b\transport-runtime-2.2.0\AndroidManifest.xml:29:13-69
+270        </service>
+271
+272        <receiver
+272-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b3023b5ae61397f3e295d9132dda2b3b\transport-runtime-2.2.0\AndroidManifest.xml:32:9-34:40
+273            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+273-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b3023b5ae61397f3e295d9132dda2b3b\transport-runtime-2.2.0\AndroidManifest.xml:33:13-132
+274            android:exported="false" />
+274-->[com.google.android.datatransport:transport-runtime:2.2.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\b3023b5ae61397f3e295d9132dda2b3b\transport-runtime-2.2.0\AndroidManifest.xml:34:13-37
+275
+276        <provider
+276-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\9ab53d10531d1f2bbd0afc90e7501ebc\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+277            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+277-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\9ab53d10531d1f2bbd0afc90e7501ebc\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+278            android:authorities="com.ygaps.jazz.lifecycle-process"
+278-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\9ab53d10531d1f2bbd0afc90e7501ebc\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+279            android:exported="false"
+279-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\9ab53d10531d1f2bbd0afc90e7501ebc\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+280            android:multiprocess="true" />
+280-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\FiercePC\.gradle\caches\transforms-2\files-2.1\9ab53d10531d1f2bbd0afc90e7501ebc\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+281    </application>
+282
+283</manifest>

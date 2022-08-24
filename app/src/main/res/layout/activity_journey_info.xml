@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        android:id="@+id/journeyInfoMainLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/demoimage"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_menu_white_24dp"
+                android:background="@drawable/style_mini_item"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:id="@+id/journeyMenu"
+                android:padding="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="START GOING"
+                android:textColor="@color/white"
+                android:id="@+id/btnStartGoingJourney"
+                android:layout_marginTop="195dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:background="@drawable/notification_button_accept"/>
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="London - Canary Wharf"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:drawableStart="@drawable/ic_closed_big"
+            android:drawablePadding="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/journeyInfoName" />
+
+
+                 <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                     android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="60dp"
+                        android:id="@+id/journeyListMembers"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_button_info"
+                        android:clickable="true">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Members"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:layout_alignParentBottom="true"
+                            android:id="@+id/journeyMemberNum"/>
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-1dp"
+                        android:layout_toRightOf="@id/tvText"
+                        android:background="@color/black"
+                        />
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="60dp"
+                         android:id="@+id/journeyListComments"
+                         android:layout_margin="10dp"
+                         android:background="@drawable/style_button_info"
+                         android:clickable="true">
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Comments"
+                             android:layout_marginTop="10dp"
+                             android:textColor="@color/white"
+                             android:textStyle="bold"
+                             android:layout_centerHorizontal="true"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="3"
+                             android:layout_centerHorizontal="true"
+                             android:layout_marginBottom="10dp"
+                             android:textColor="@color/white"
+                             android:textStyle="bold"
+                             android:textSize="18sp"
+                             android:layout_alignParentBottom="true"
+                             android:id="@+id/journeyCommentNum"/>
+                     </RelativeLayout>
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="-1dp"
+                        android:layout_toRightOf="@id/tvText"
+                        android:background="@color/black"
+                        />
+                     <RelativeLayout
+                         android:layout_width="0dp"
+                         android:layout_weight="1"
+                         android:layout_height="60dp"
+                         android:id="@+id/journeyListReviews"
+                         android:layout_margin="10dp"
+                         android:background="@drawable/style_button_info"
+                         android:clickable="true">
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Reviews (3)"
+                             android:layout_marginTop="10dp"
+                             android:textColor="@color/white"
+                             android:textStyle="bold"
+                             android:id="@+id/mainReviewCount"
+                             android:layout_centerHorizontal="true"/>
+
+                         <RatingBar
+                             android:id="@+id/journeyRating"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             style="?android:attr/ratingBarStyleSmall"
+                             android:numStars="5"
+                             android:max="5"
+                             android:layout_marginTop="30dp"
+                             android:layout_centerHorizontal="true"
+                             android:progressTint="@color/quantum_yellow"
+                             android:progressBackgroundTint="@color/lightgray"
+                             android:stepSize="0.5"
+                             android:isIndicator="true" />
+                     </RelativeLayout>
+
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/serviceRatingTextSuggest_journey"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Rate this Journey" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Tell other what you think" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/serviceRatingStarSelect_journey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:max="5"
+
+            android:layout_gravity="center_horizontal"
+            android:progressTint="@color/colorAccent"
+            android:progressBackgroundTint="@color/lightgray"
+            android:stepSize="1"
+            android:isIndicator="false" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/serviceFeedbackEditContent_journey"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editserviceRatingContent_journey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Feedback this Service!">
+                </com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:id="@+id/btnFeedbackCancel_journey"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="30dp"
+                    android:background="@null"/>
+                <Button
+                    android:layout_marginStart="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnFeedbackSubmit_journey"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Submit"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.taufiqrahman.reviewratings.RatingReviews xmlns:bar="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rating_reviews_journey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ratingAveragePoint_journey"
+                app:layout_constraintTop_toTopOf="parent"
+                bar:animation="true"
+                bar:layout_constraintVertical_bias="0.19"
+                bar:max_value="100"
+                bar:show_label="true"
+                bar:spaces="0dp"
+                bar:text_color="#808080"
+                bar:text_size="10sp"
+                bar:width="15dp" />
+
+            <TextView
+                android:id="@+id/ratingAveragePoint_journey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="?android:selectableItemBackground"
+                android:text="4.6"
+                android:textColor="#333333"
+                android:textSize="26sp"
+                app:layout_constraintEnd_toEndOf="@+id/ratingBar_journey"
+                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintStart_toStartOf="@+id/ratingBar_journey"
+                app:layout_constraintTop_toTopOf="@+id/rating_reviews_journey" />
+
+            <RatingBar
+                android:id="@+id/ratingBar_journey"
+                style="@android:style/Widget.Material.Light.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:numStars="5"
+                android:progressTint="#333333"
+                android:rating="4"
+                android:stepSize="0.5"
+                app:layout_constraintBottom_toBottomOf="@+id/rating_reviews_journey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingAveragePoint_journey"
+                app:layout_constraintVertical_bias="0.07999998"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/textView2_journey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="2dp"
+                android:text="0"
+                android:textColor="#333333"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/ratingBar_journey"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar_journey"
+                android:layout_marginLeft="8dp" />
+
+            <ImageView
+                android:id="@+id/imageView_journey"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#333333"
+                app:layout_constraintEnd_toEndOf="@+id/ratingBar_journey"
+                app:layout_constraintStart_toEndOf="@+id/textView2_journey"
+                app:layout_constraintTop_toTopOf="@+id/textView2_journey"
+                app:srcCompat="@drawable/ic_person"
+                android:layout_marginRight="8dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DETAILS"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_menu_white_24dp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/style_title"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/imageborder"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="70dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Date"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12/12/2019 - 12/12/2019"
+                        android:textSize="16sp"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/journeyInfoDate"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_schedule_date_svgrepo_com"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/imageborder"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="70dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="People"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Adults - 2 Childs"
+                        android:textSize="16sp"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/journeyInfoPeople"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_person_black_30dp"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/imageborder"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="70dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Budget"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 - 50"
+                        android:textSize="16sp"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/journeyInfoCost"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_monetization_on_black_30dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STOP POINTS"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_menu_white_24dp"
+            android:gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:background="@drawable/style_title"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_restaurant_white"
+                android:text="3"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/style_mini_item"
+                android:id="@+id/countRest"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/countHotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_hotel"
+                android:layout_marginStart="20dp"
+                android:text="3"
+
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:drawablePadding="5dp"
+                android:padding="5dp"
+                android:background="@drawable/style_mini_item"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/countRes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_bedtime"
+                android:layout_marginStart="20dp"
+                android:text="3"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/style_mini_item"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/countOthers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_pin"
+                android:layout_marginStart="20dp"
+                android:text="3"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/style_mini_item"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:id="@+id/stopPointRecyclerView"
+            />
+
+    </LinearLayout>
+
+
+
+<!--<RelativeLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="10dp">-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="220dp"-->
+<!--        android:src="@drawable/demoimage"-->
+<!--        android:scaleType="centerCrop"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ha Noi - Ho Chi Minh"-->
+
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_marginStart="3dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="26sp"-->
+<!--            android:id="@+id/journeyInfoName"/>-->
+
+<!--        <RatingBar-->
+<!--            android:id="@+id/journeyRating"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="?android:attr/ratingBarStyleSmall"-->
+<!--            android:numStars="5"-->
+<!--            android:theme="@style/RatingBar"-->
+<!--            android:stepSize="0.1"-->
+<!--            android:isIndicator="true" />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="60dp"-->
+<!--                android:id="@+id/journeyListMembers"-->
+<!--                android:clickable="true">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Members"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="3"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:id="@+id/journeyMemberNum"/>-->
+<!--            </RelativeLayout>-->
+<!--            <View-->
+<!--                android:layout_width="0.5dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginLeft="-1dp"-->
+<!--                android:layout_toRightOf="@id/tvText"-->
+<!--                android:background="@color/black"-->
+<!--                />-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="60dp">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Comments"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="3"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:id="@+id/journeyCommentNum"/>-->
+<!--            </RelativeLayout>-->
+<!--            <View-->
+<!--                android:layout_width="0.5dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:layout_marginLeft="-1dp"-->
+<!--                android:layout_toRightOf="@id/tvText"-->
+<!--                android:background="@color/black"-->
+<!--                />-->
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_height="60dp">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Reviews"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_centerHorizontal="true"/>-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="3"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:id="@+id/journeyReviewNum"/>-->
+<!--            </RelativeLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="DETAILS"-->
+<!--            android:paddingTop="15dp"-->
+<!--            android:paddingBottom="15dp"-->
+<!--            android:textColor="@color/colorPrimary"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20sp"/>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20sp"-->
+<!--                android:text="Date"-->
+<!--                android:textColor="@color/black"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="12/12/2019 - 12/12/2019"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:id="@+id/journeyInfoDate"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:src="@drawable/ic_schedule_date_svgrepo_com"-->
+<!--                android:layout_alignParentEnd="true"/>-->
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="20dp">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20sp"-->
+<!--                android:text="People"-->
+<!--                android:textColor="@color/black"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="3 Adults - 2 Childs"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:id="@+id/journeyInfoPeople"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:src="@drawable/ic_person_black_30dp"-->
+<!--                android:layout_alignParentEnd="true"/>-->
+<!--        </RelativeLayout>-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="20dp">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20sp"-->
+<!--                android:text="Budget"-->
+<!--                android:textColor="@color/black"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1000 - 10000000"-->
+<!--                android:textSize="16sp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:id="@+id/journeyInfoCost"/>-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:src="@drawable/ic_monetization_on_black_30dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:layout_alignParentEnd="true"/>-->
+<!--        </RelativeLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <ImageButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ic_exit_to_app_black_24dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:background="@null" />-->
+<!--</RelativeLayout>-->
+
+</ScrollView>

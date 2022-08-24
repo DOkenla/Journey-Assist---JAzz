@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.Inconnu08:android-ratingreviews:1.2.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1480544b2defa2721ab004dd8cd5422/android-ratingreviews-1.2.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1480544b2defa2721ab004dd8cd5422/android-ratingreviews-1.2.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b1480544b2defa2721ab004dd8cd5422/android-ratingreviews-1.2.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.Inconnu08/android-ratingreviews/1.2.0/d4bc8c14ebf8b689d634464a3b1e3d8b229db299/android-ratingreviews-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

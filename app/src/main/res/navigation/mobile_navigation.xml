@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.ygaps.jazz.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.ygaps.jazz.view.navigation.history.HistoryFragment"
+        android:label="Lịch sử"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.ygaps.jazz.view.navigation.dashboard.DashboardFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_explorer"
+        android:name="com.ygaps.jazz.view.navigation.explorer.ExplorerFragment"
+        android:label="@string/title_explorer"
+        tools:layout="@layout/fragment_explorer" />
+
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.ygaps.jazz.view.navigation.notifications.NotificationsFragment"
+        android:label="@string/title_user"
+        tools:layout="@layout/fragment_users" />
+
+
+</navigation>

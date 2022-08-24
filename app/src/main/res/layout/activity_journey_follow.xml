@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/journeyFollowMainLayout"
+    tools:context=".view.journey.JourneyFollowActivity">
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:fabCustomSize="40dp"-->
+<!--        android:id="@+id/journeyFollowChatBtn"-->
+<!--        android:src="@drawable/ic_chat_black_24dp"-->
+<!--        android:layout_margin="20dp"-->
+<!--        />-->
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/white"-->
+<!--        app:fabCustomSize="60dp"-->
+<!--        android:id="@+id/journeyFollowCreateNotificationButton"-->
+<!--        android:src="@drawable/ic_notifications_black_24dp"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_margin="20dp"-->
+<!--        />-->
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:background="@drawable/imageborder"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:id="@+id/journeyFollowChatBtn"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/ic_chat_black_24dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:id="@+id/journeyFollowNotificationBtn"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/ic_add_alert_black_24dp"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:background="@color/gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:descendantFocusability="blocksDescendants"
+                android:layout_height="40dp"
+                android:id="@+id/recordBtn"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_mic_black_32dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textStyle="bold"
+                    android:id="@+id/recordBtnTimeCount"
+                    android:textSize="13sp"
+                    android:visibility="gone"
+                    android:textColor="@color/red"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance (km)"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textColor="@color/primaryTextColor"
+                    android:id="@+id/distanceToDestination"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                />
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Remaining (min)"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/primaryTextColor"
+                    android:id="@+id/timeRemainingToDestination"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+
+
+            </LinearLayout>
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="   • Time remaining (minutes) :"-->
+
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"/>-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="60dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="30"-->
+<!--                    android:id="@+id/timeRemainingToDestination"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textStyle="bold"/>-->
+
+
+<!--            </LinearLayout>-->
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:clickable="true"
+                android:id="@+id/moveToMemberLocation"
+                android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_people_black_24dp"
+                android:text=" : 0"
+                android:textColor="@color/black"
+                android:id="@+id/currentFollowingJourney"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:clickable="true"
+                android:id="@+id/listNotificationOnRoads"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_notifications_black_24dp"
+                    android:text=" : 0"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/notiOnRoadCount"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+            </RelativeLayout>
+
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/gray"-->
+<!--                />-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:descendantFocusability="blocksDescendants"-->
+<!--                android:clickable="true"-->
+<!--                android:layout_weight="1">-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawableStart="@drawable/ic_record_voice_over_black_24dp"-->
+<!--                    android:text=" : 0"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    />-->
+<!--            </RelativeLayout>-->
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/bottom_sheet_notifi_on_road" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

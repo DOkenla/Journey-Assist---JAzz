@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/bannerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Travel History"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimary" />
+
+        <SearchView
+            android:id="@+id/searchJourneys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"/>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/journeyIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_journey" />
+        <TextView
+            android:id="@+id/journeyNumber"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="3dp"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@id/journeyIcon"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text=""
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginStart="3dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/journeyNumber"
+            android:textSize="16sp"
+            android:id="@+id/asiduoaw"
+            android:text=" Journey"/>
+
+
+
+
+            <TextView
+                android:id="@+id/numJourneyCancelled"
+                android:layout_toEndOf="@+id/asiduoaw"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/ic_cancel"/>
+
+        <TextView
+            android:id="@+id/numJourneyOpenned"
+            android:layout_toEndOf="@+id/numJourneyCancelled"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_open_sign"/>
+
+        <TextView
+            android:id="@+id/numJourneyStarted"
+            android:layout_toEndOf="@+id/numJourneyOpenned"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_start"/>
+
+        <TextView
+            android:id="@+id/numJourneyClosed"
+            android:layout_toEndOf="@+id/numJourneyStarted"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_closed"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/journeyLoaded"
+            android:src="@drawable/ic_remove_red_eye_black_24dp"
+            android:layout_marginEnd="5dp"
+            />
+
+        <TextView
+            android:id="@+id/journeyLoaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toRightOf="@id/tvText"
+        android:background="@color/colorAccent"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/journeyListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:layout_marginBottom="56dp"
+            android:divider="@null"
+            android:dividerHeight="2dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingaddnew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_circle_black_24dp"
+            android:layout_marginBottom="60dp"
+            android:layout_gravity="bottom|end"
+            android:clickable="true"
+            />
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+
